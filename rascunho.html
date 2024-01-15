@@ -11,12 +11,52 @@
             border: none;
         }
 
+        ::-webkit-scrollbar{
+            width: 0px;
+            height: 0px;
+        }
+
+        main{
+            float: left;
+         
+        }
+        aside{
+            float: right;
+            width: 50%;
+        }
+        div{
+            text-align: center;
+            font-size: 3em;
+            font-weight: bolder;
+            color: #fff;
+            width: 70px;
+            height: 70px;
+            box-shadow: 10px 10px 10px black;
+            margin-top: 30px;
+            box-sizing: border-box;
+            font-variant: normal;
+        }
+
+        div:hover{
+            border: 7px solid black;
+            transition: border 0.5s;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Em Progresso...</h1>
-    <h1>Perai, Já sei:</h1>
-    <iframe srcdoc="<video src='video.mp4' controls autoplay></video>"></iframe>
+    <main>
+        <h1>Em Progresso...</h1>
+        <h1>Perai, Já sei:</h1>
+        <iframe srcdoc="<video src='video.mp4' controls autoplay></video>"></iframe>
+    </main>
+    <aside>
+        <div style="background-color:brown;">#</div>
+        <div style="background-color:blueviolet;">&</div>
+        <div style="background-color:yellowgreen;">@</div>
+        <div style="background-color:thistle;">ü</div>
+    </aside>
+
     
 </body>
 </html>
