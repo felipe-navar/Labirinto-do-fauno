@@ -49,6 +49,31 @@
         <h1>Em Progresso...</h1>
         <h1>Perai, Já sei:</h1>
         <iframe srcdoc="<video src='video.mp4' controls autoplay></video>"></iframe>
+        <form autocomplete="on" method="post">
+            <p>
+                <label for="imes">Mês:</label>
+                <input type="month" name="mes" id="imes">
+            </p>
+            <p>
+                <label for="ihora">Hora:</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <label for="ifone">Fone:</label>
+                <input type="tel" name="fone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" id="ifone">
+            </p>
+            <p>
+                <label for="iup">Upload:</label>
+                <input type="file" name="upload" id="iup">
+                <!-- upload só funciona com post -->
+            </p>
+            <!-- pattern RegEx -->
+            <p>
+                <input type="reset" value="Limpar">
+            </p>
+            
+            
+        </form>
     </main>
     <aside>
         <div style="background-color:brown;">#</div>
